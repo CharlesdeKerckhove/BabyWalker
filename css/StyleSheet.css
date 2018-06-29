@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #DCD3FF;
   font-family: Roboto, Arial;
 }
 
@@ -16,6 +16,11 @@ p {
   margin-top: 1%;
 }
 
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+}
 /*Header*/
 
 /*Navigation Bar*/
@@ -26,8 +31,7 @@ p {
 
 #main {
   width: 100%;
-  height: 40px;
-  background-color: #19BD75;
+  height: auto;
 }
 
 nav ul {
@@ -35,29 +39,35 @@ nav ul {
   line-height: 40px;
   list-style: none;
   width: 100%;
-  text-align: center;
+  text-align: right;
+  background-color: #DCD3FF;
+}
+#Title{
+  float: left;
+    font-size: 1.4em;
 }
 
 nav li {
   font-family: 'Roboto', sans-serif;
-  line-height: 40px;
-  height: 40px;
+  line-height: 50px;
+  height: 50px;
   width: 12%;
   overflow: hidden;
-  padding-right: 0%;
   text-align: center;
   display: inline-block;
+  color: #000;
 }
 
 nav li:hover {
-  background-color: #CAE8D3;
+  background-color: #9192BA;
 }
 
 nav a,
 #dropbtn {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   display: inline-block;
+  font-size: 1.4em;
 }
 
 nav a:hover,
@@ -67,11 +77,11 @@ nav a:hover,
 }
 
 .active {
-  background-color: #CAE8D3;
+  background-color: #9192BA;
 }
 
 .active a {
-  color: black;
+  color: #fff;
 }
 
 .dropdown {
@@ -81,7 +91,7 @@ nav a:hover,
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #19BD75;
+  background-color: #DCD3FF;
   width: inherit;
   z-index: 1;
 }
@@ -96,7 +106,7 @@ nav a:hover,
 }
 
 .dropdown-content a:hover {
-  background-color: #CAE8D3;
+  background-color: #DCD3FF;
   color: black;
 }
 
@@ -105,112 +115,64 @@ nav a:hover,
 }
 
 /*Logo*/
-
-/*Footer*/
-
-footer {
-  width: 100%;
-  height: 170px;
-  background-color: #CAE8D3;
-  color: #19BD75;
-  margin-top: 1%;
-  padding-top: 1%;
+#fam{
+    width: 100%;
 }
-
-footer ul {
-  list-style: none;
-  width: 100%;
-  text-align: center;
-  padding-left: 0%;
+#description{
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    text-align: left;
 }
-
-footer li {
-  line-height: 40px;
-  height: 40px;
-  width: 16%;
-  display: inline-block;
-  overflow: hidden;
-}
-
-footer a {
-  text-decoration: none;
-  color: #19BD75;
-  font-size: 1em;
-}
-
-footer a:hover {
-  cursor: pointer;
-  color: black;
-}
-
-/*Social Media Buttons*/
-
-div.fa-facebook-f {
-  float: right;
-  margin: 0px 10px;
-  width: 3%;
-  height: auto;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 1.4em;
-}
-
-div.fa-facebook-f:hover {
-  color: black;
-  cursor: pointer;
-}
-
-div.fa-twitter {
-  float: right;
-  margin: 0px 10px;
-  width: 3%;
-  height: auto;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 1.4em;
-}
-
-div.fa-twitter:hover {
-  color: black;
-  cursor: pointer;
-}
-
-div.fa-instagram {
-  float: right;
-  margin: 0px 10px;
-  width: 3%;
-  height: auto;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 1.4em;
-}
-
-div.fa-instagram:hover {
-  color: black;
-  cursor: pointer;
-}
-
-div.fa-youtube {
-  float: right;
-  margin: 0px 10px;
-  width: 3%;
-  height: auto;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 1.4em;
-}
-
-div.fa-youtube:hover {
-  color: black;
-  cursor: pointer;
-}
-
 /*Page One*/
+#containerArt {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+.box {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerArtL {
+  background-image: url(images/edited/art1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+#containerArtC {
+  background-color: #9192BA;
+  color: #fff;
+}
+
+#containerArtR {
+  background-image: url(images/edited/art2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
 /*Page Two*/
 
 /*Page Three*/
@@ -240,7 +202,7 @@ div.fa-youtube:hover {
     display: inline-block;
     width: 100%;
     height: 40px;
-    background-color: #19BD75;
+    background-color: #DCD3FF;
 }
 #main a:hover,
 .dropdown:hover #dropbtn {
@@ -257,26 +219,6 @@ div.fa-youtube:hover {
 }
 /*Logo*/
 
-/*Footer*/
-    
-footer li {
-    width: 15%;
-}
-footer a {
-    font-size: 0.7em;
-}
-div.fa-facebook-f {
-    font-size: 1em;
-}
-div.fa-twitter {
-    font-size: 1em;
-}
-div.fa-instagram {
-    font-size: 1em;
-}
-div.fa-youtube {
-    font-size: 1em;
-}
 /*Page One*/
 
 /*Page Two*/
