@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 }
-
+/*Text Styles*/
 body {
   background-color: #5285B6;
   font-family: 'Nunito', sans-serif;
@@ -42,7 +42,7 @@ h3 {
     color: #fff;
     font-size: 1.1em;
 }
-/*Header*/
+/*Navigation Mobile*/
 nav ul {
   line-height: 50px;
   list-style: none;
@@ -108,7 +108,7 @@ nav a:hover, .dropdown:hover #dropbtn {
   display: block;
 }
 
-/*everything*/
+/*Mobile Images*/
 #imgContainer{
     width: 100%;
     margin: auto;
@@ -124,6 +124,7 @@ nav a:hover, .dropdown:hover #dropbtn {
 #description{
     margin-bottom: 5%;
 }
+/*Mobile Contact Me*/
 #contQual{
     height: 200px;
     width: 100%;
@@ -135,6 +136,7 @@ nav a:hover, .dropdown:hover #dropbtn {
     float: left;
     margin-left: 1%;
 }
+/*Mobile About*/
 #map{
     display: block;
     margin: auto;
@@ -165,8 +167,10 @@ td, th{
 tr:nth-child(even){
     background-color: #2B80A3;
 }
+/*Tablet Settings*/
 @media only screen and (min-width: 760px) {
-
+    
+/*Readjust Text Styles*/
 p {
     margin-top: 1%;
     font-size: 2em;
@@ -184,6 +188,8 @@ h3 {
 nav a {
     font-size: 2.2em;
 }
+    
+/*Tablet Contact Me*/
 #contQual{
     height: 300px;
 }
@@ -195,11 +201,14 @@ nav a {
 #Qualifications{
     float: left;
 }
+/*Tablet About*/
 table{
     font-size: 1.5em;
 }
 }
+/*Computer Settings*/
 @media only screen and (min-width: 1025px) {
+/*Computer Home*/
 .fam{
     width: 60%;
     display: block;
@@ -210,20 +219,14 @@ table{
     display: block;
     margin: auto;
 }
-/*#image1{
-    float: left;
-    height: 600px;
-    margin-top: 0.5%;
-    margin-left: 2%;
-}*/
-/*About*/
+/*Computer About*/
 #image2{
     display:block;
     margin: auto;
     width: 60%;
 }
 
-/*Contact*/
+/*Computer Contact*/
 #Quote{
     display: block;
     margin: auto;
@@ -254,6 +257,7 @@ table{
     float: left;
     text-align: left;
 }
+/*Computer About*/
 #AboutTitle{
     margin-bottom: 0;
 }
@@ -264,14 +268,3 @@ table{
 td{
     width: 20%;
 }
-/*Page One*/
-
-/*Page Two*/
-
-/*Page Three*/
-
-/*Page Four*/
-
-/*Page Five*/
-
-/*404 Page*/
